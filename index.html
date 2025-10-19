@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API - Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty Explorer</h1>
+        <p>Desenvolvido para o trabalho de consumo de API</p>
+    </header>
+
+    <main>
+        <section id="personagens-section">
+            <h2>Personagens (Método 1: Com Repetição e Filtro)</h2>
+            <div class="filter-container">
+                <input type="text" id="character-name-filter" placeholder="Filtrar por nome do personagem">
+                <button onclick="fetchCharacters()">Buscar</button>
+            </div>
+            <div id="character-list" class="grid-container">
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="localizacao-section">
+            <h2>Localização Aleatória (Método 2: Sem Repetição)</h2>
+            <button onclick="fetchRandomLocation()">Ver Detalhes da Localização</button>
+            <div id="location-details" class="details-container">
+                <p>Clique no botão para carregar uma localização aleatória.</p>
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="episodio-section">
+            <h2>Episódio Aleatório (Método 3: Sem Repetição e Sem Filtro)</h2>
+            <button onclick="fetchRandomEpisode()">Ver Detalhes do Episódio</button>
+            <div id="episode-details" class="details-container">
+                <p>Clique no botão para carregar um episódio aleatório.</p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Desenvolvido por Kauan Silvani para o trabalho de Consumo de API. Dados fornecidos por <a href="https://rickandmortyapi.com/" target="_blank">The Rick and Morty API</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
