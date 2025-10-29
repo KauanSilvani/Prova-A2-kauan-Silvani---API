@@ -10,6 +10,7 @@
     <header>
         <h1>Rick and Morty Explorer</h1>
         <p>Desenvolvido para o trabalho de consumo de API</p>
+        <button id="open-log-modal-btn">Logs de Consumo (Visualizar/Excluir)</button>
     </header>
 
     <main>
@@ -20,7 +21,7 @@
                 <button onclick="fetchCharacters()">Buscar</button>
             </div>
             <div id="character-list" class="grid-container">
-                </div>
+            </div>
         </section>
 
         <hr>
@@ -30,7 +31,7 @@
             <button onclick="fetchRandomLocation()">Ver Detalhes da Localização</button>
             <div id="location-details" class="details-container">
                 <p>Clique no botão para carregar uma localização aleatória.</p>
-                </div>
+            </div>
         </section>
 
         <hr>
@@ -40,13 +41,23 @@
             <button onclick="fetchRandomEpisode()">Ver Detalhes do Episódio</button>
             <div id="episode-details" class="details-container">
                 <p>Clique no botão para carregar um episódio aleatório.</p>
-                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; Desenvolvido por Kauan Silvani para o trabalho de Consumo de API. Dados fornecidos por <a href="https://rickandmortyapi.com/" target="_blank">The Rick and Morty API</a>.</p>
     </footer>
+
+    <div id="log-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Logs de Consumo da API</h3>
+            <div id="log-list-container">
+                <p>Carregando logs...</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
